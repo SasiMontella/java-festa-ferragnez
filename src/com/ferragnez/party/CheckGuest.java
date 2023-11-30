@@ -10,9 +10,10 @@ public class CheckGuest {
         String guestInput = scan.nextLine();
 
         boolean match = false;
-        for (int i = 0; i < guestList.length && !match ; i++) {
+        for (int i = 0; i < guestList.length; i++) {
             if (guestList[i].equals(guestInput)){
                 match = true;
+                break;
             }
         }
         if (match){
