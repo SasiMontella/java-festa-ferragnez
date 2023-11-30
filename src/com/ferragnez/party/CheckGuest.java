@@ -10,11 +10,17 @@ public class CheckGuest {
         String guestInput = scan.nextLine();
 
         boolean match = false;
-        for (int i = 0; i < guestList.length; i++) {
+      /*  for (int i = 0; i < guestList.length && !match; i++) {
             if (guestList[i].equals(guestInput)){
                 match = true;
-                break;
             }
+        }*/
+        int i = 0;
+        while (i < guestList.length){
+            if (guestList[i].equals(guestInput)){
+                match = true;
+            }
+            i++;
         }
         if (match){
             System.out.println("Il tuo nome è nella lista. Buon divertimento!");
